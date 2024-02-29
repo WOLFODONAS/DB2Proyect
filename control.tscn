@@ -1,0 +1,484 @@
+[gd_scene load_steps=5 format=3 uid="uid://caoxyi1md16k3"]
+
+[ext_resource type="Script" path="res://control.gd" id="1_fo1ms"]
+[ext_resource type="Script" path="res://Editore.gd" id="3_0no2k"]
+[ext_resource type="Script" path="res://Buscador.gd" id="3_chcm8"]
+[ext_resource type="Script" path="res://Delatedor.gd" id="4_6e7oq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fo1ms")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tabs_visible = false
+
+[node name="Panel0" type="Panel" parent="TabContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel0/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Alumnos"
+
+[node name="Button2" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Kardex"
+
+[node name="Button3" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Asignaturas"
+
+[node name="Button4" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Grupos"
+
+[node name="Button5" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Especialidades"
+
+[node name="Button6" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Idiomas"
+
+[node name="Button7" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Profesores"
+
+[node name="Button8" type="Button" parent="TabContainer/Panel0/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Aula"
+
+[node name="Label" type="Label" parent="TabContainer/Panel0/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Inicio"
+horizontal_alignment = 1
+
+[node name="Panel1" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel1/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Alumno"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel1/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel1/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel1/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Panel2" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Kardex"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel2/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Panel3" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Asignatura"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel3/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Panel4" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Grupos"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel4/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Panel5" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel5/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Especialidades"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel5/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel5/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel5/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Panel6" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel6/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Idioma"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel6/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel6/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel6/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Panel7" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel7/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Profesor"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel7/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel7/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel7/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Panel8" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Panel8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Panel8/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Aula"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Panel8/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Panel8/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Panel8/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.73
+theme_override_constants/separation = 20
+
+[node name="Buscador" type="Window" parent="."]
+position = Vector2i(298, 36)
+size = Vector2i(600, 600)
+visible = false
+script = ExtResource("3_chcm8")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Buscador"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Buscador/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Buscar"
+horizontal_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="Buscador/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Condiciones"
+
+[node name="Button" type="Button" parent="Buscador/VBoxContainer"]
+layout_mode = 2
+text = "Go"
+
+[node name="Editore" type="Window" parent="."]
+initial_position = 2
+size = Vector2i(600, 200)
+visible = false
+script = ExtResource("3_0no2k")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Editore"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Editore/VBoxContainer"]
+layout_mode = 2
+text = "Editar o agregar"
+horizontal_alignment = 1
+
+[node name="CheckButton" type="CheckButton" parent="Editore/VBoxContainer"]
+layout_mode = 2
+text = "Editar"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Editore/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Editore/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Conditions"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Editore/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+editable = false
+
+[node name="Button" type="Button" parent="Editore/VBoxContainer"]
+layout_mode = 2
+text = "Go"
+
+[node name="Delatedor" type="Window" parent="."]
+initial_position = 2
+size = Vector2i(300, 300)
+visible = false
+script = ExtResource("4_6e7oq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Delatedor"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Delatedor/VBoxContainer"]
+layout_mode = 2
+text = "Borrar "
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Delatedor/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Conditions"
+
+[node name="Button" type="Button" parent="Delatedor/VBoxContainer"]
+layout_mode = 2
+text = "Go
+"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "______________"
+
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button2" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button3" to="." method="_on_button_pressed" binds= [3]]
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button4" to="." method="_on_button_pressed" binds= [4]]
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button5" to="." method="_on_button_pressed" binds= [5]]
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button6" to="." method="_on_button_pressed" binds= [6]]
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button7" to="." method="_on_button_pressed" binds= [7]]
+[connection signal="pressed" from="TabContainer/Panel0/HBoxContainer/VBoxContainer/Button8" to="." method="_on_button_pressed" binds= [8]]
+[connection signal="close_requested" from="Buscador" to="." method="_on_window_close_requested"]
+[connection signal="updating" from="Buscador" to="." method="_on_buscador_updating"]
+[connection signal="pressed" from="Buscador/VBoxContainer/Button" to="Buscador" method="_on_button_pressed"]
+[connection signal="close_requested" from="Editore" to="." method="_on_editore_close_requested"]
+[connection signal="toggled" from="Editore/VBoxContainer/CheckButton" to="Editore" method="_on_check_button_toggled"]
+[connection signal="pressed" from="Editore/VBoxContainer/Button" to="Editore" method="_on_button_pressed"]
+[connection signal="close_requested" from="Delatedor" to="." method="_on_delatedor_close_requested"]
+[connection signal="pressed" from="Delatedor/VBoxContainer/Button" to="Delatedor" method="_on_button_pressed"]
